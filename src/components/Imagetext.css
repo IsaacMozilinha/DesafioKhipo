@@ -1,0 +1,40 @@
+/* src/styles/ImageWithText.css */
+.image-wrapper {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .image-wrapper img {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+  }
+  
+  .image-text {
+    position: absolute;
+    top: 50%; /* Ajuste para posicionar o texto no centro */
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centraliza o texto */
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5); /* Fundo semitransparente para melhorar a legibilidade */
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  @media (max-width: 768px) {
+    .image-text {
+        font-size: 16px; /* Reduz o tamanho do texto em telas menores */
+        padding: 8px;
+        text-align: center;
+        
+    
+        
+    
+  }
+
+  
+}

@@ -1,0 +1,35 @@
+.gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    
+    width: 100vw;  
+    height: calc(100vh - 60px); /* Subtrai a altura do Navbar (supondo que o navbar tenha 60px de altura) */
+    padding-top: 20px;
+    flex-wrap: wrap;
+    
+  }
+  
+  .gallery img {
+    width: 300px;
+    height: auto;
+    border-radius: 35px;
+  }
+
+  @media (max-width: 768px){
+    .gallery{
+        display: flex;
+        margin-top: 30%;
+        flex-direction: column;
+        height: auto;
+
+        
+    }
+
+    .gallery img {
+        width: 80%;
+        max-width: 300px;
+    }
+
+  }
